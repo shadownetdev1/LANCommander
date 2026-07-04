@@ -30,6 +30,7 @@
         }
         <Button Type="@ButtonType.Default" OnClick="OpenImportDialog">Import</Button>
         <Button OnClick="() => Add()" Type="@ButtonType.Primary">Add Game</Button>
+        <Button OnClick="() => NavigationManager.NavigateTo('/Games/Add')" Type="@ButtonType.Primary">Add Game Manually</Button>
     </RightToolbar>
     <Columns>
         <Selection Key="@(context.Id.ToString())" CheckStrictly="true" />
